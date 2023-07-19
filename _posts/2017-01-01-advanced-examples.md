@@ -72,3 +72,13 @@ You can also embed a lot of stuff, for example from YouTube, using the `embed.ht
   <div class='gll'>blank<br/>blank</div>
   <div>"Hello world, my name is blank."</div>
 </div> %}
+
+{%  
+<h1>John 3:16</h1>
+<div class="unit"><p class="gk">οὕτως</p>
+<p class="en">such</p></div>
+<div class="unit"><p class="gk">γὰρ</p>
+<p class="en">for</p></div>
+<div class="unit"><p class="gk">ἠγάπησεν</p>
+<p class="en">loved</p></div>
+%}
