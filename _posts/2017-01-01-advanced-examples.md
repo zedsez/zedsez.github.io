@@ -63,22 +63,6 @@ You can also embed a lot of stuff, for example from YouTube, using the `embed.ht
 
 {% include embed.html url="https://www.youtube.com/embed/_C0A5zX-iqM" %}
 
-{% include embed.html <div>
-  <div class='gll'>hello<br/>hello</div>
-  <div class='gll'>world<br/>world</div>
-  <div class='gll'>my<br/><a class='sc'>1SG</a>.<abbr class='abbrv sc' title='possessive; possessor'>POSS</abbr></div>
-  <div class='gll'>name<br/>name</div>
-  <div class='gll'>is<br/>be.<a class='sc'>3SG</a></div>
-  <div class='gll'>blank<br/>blank</div>
-  <div>"Hello world, my name is blank."</div>
-</div> %}
-
-{%  
-<h1>John 3:16</h1>
-<div class="unit"><p class="gk">οὕτως</p>
-<p class="en">such</p></div>
-<div class="unit"><p class="gk">γὰρ</p>
-<p class="en">for</p></div>
-<div class="unit"><p class="gk">ἠγάπησεν</p>
-<p class="en">loved</p></div>
-%}
+this    is     just a         test
+DEM     be.3SG just DEM.INDF  test
+"This is just a test."
