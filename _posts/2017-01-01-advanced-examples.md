@@ -62,3 +62,13 @@ A wrapper `div` with the class `large` can be used to increase the width of an i
 You can also embed a lot of stuff, for example from YouTube, using the `embed.html` include.
 
 {% include embed.html url="https://www.youtube.com/embed/_C0A5zX-iqM" %}
+
+{% include embed.html <div>
+  <div class='gll'>hello<br/>hello</div>
+  <div class='gll'>world<br/>world</div>
+  <div class='gll'>my<br/><a class='sc'>1SG</a>.<abbr class='abbrv sc' title='possessive; possessor'>POSS</abbr></div>
+  <div class='gll'>name<br/>name</div>
+  <div class='gll'>is<br/>be.<a class='sc'>3SG</a></div>
+  <div class='gll'>blank<br/>blank</div>
+  <div>"Hello world, my name is blank."</div>
+</div> %}
