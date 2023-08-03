@@ -28,6 +28,18 @@
   {% assign pages = site.pages | where_exp: "item", "item.title and item.sitemap != false" | sort: "order" %}
 {% endif %}
 
+
+<head>
+  <style>
+  body {
+    background-image: url('{{ site.baseurl }}/assets/content/images/bg-khorvirap.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  </style>
+</head>
+
 <header>
   <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
   {% include menu.html menu=pages %}
