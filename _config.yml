@@ -18,8 +18,9 @@ minimal: false             # use a dark header
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.md", title: "home"}
 #  - {file: "README.md", title: "about"}
-  - {file: "/hamo_cv.pdf", title: "CV"}
-#  - {file: "blog.md", title: "blog"}
+  - {url: "https://alexanderhamo.org/cv.pdf", title: "CV"}
+  - {url: "https://www.ling.upenn.edu/people/alexander-hamo", title: "penn"}
+#  - {file: "blog.md", title: "blog"} 
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:ahamo@sas.upenn.edu"}
@@ -32,4 +33,5 @@ comments:
 
 plugins:
  - jekyll-feed
+ - jekyll-target-blank
  #- jekyll-seo-tag
