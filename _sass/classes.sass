@@ -6,13 +6,13 @@
 
 .more a
   border-radius: 2px
-  border: 1.5px solid $link-color
+  border: 1.5px solid var(--link-color)
   padding: .4em .8em
   transition: .2s background, .2s color
 
 .more a:hover
-  color: #fff
-  background: $link-color
+  color: #f2f2f2
+  background: var(--link-color)
   text-decoration: inherit
 
 .archive
@@ -34,6 +34,36 @@
 
 a:hover .icon
   color: reduce(100)
+
+body .icon.moon-icon
+  display: none // Hide the moon icon by default
+
+.theme-toggle-button
+  background-color: var(--main-background-color)
+  color: var(--main-text-color)
+  border: none
+  border-radius: 100%
+  padding: 10px
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  outline: none
+  transition: 0.2s background-color, 0.2s color
+
+  &:hover
+    background-color: var(--main-text-color) // Light on hover
+    color: var(--main-background-color) // Dark on hover
+
+  // Ensure the SVG inside the button follows the color change on hover
+  &:hover .icon
+    fill: var(--main-background-color) // Dark on hover
+
+body.light .icon.moon-icon
+  display: inline // Show the moon icon when the light theme is active
+
+body.light .icon.sun-icon
+  display: none // Hide the sun icon when the light theme is active
+
 
 .full table
   display: table

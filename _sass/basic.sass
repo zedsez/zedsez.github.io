@@ -1,6 +1,17 @@
+//html, html[data-theme="light"]
+//  --link-color: rgb(0, 112, 201)
+//  --main-background-color: hsl(0, 0%, 90%)
+//  --main-text-color: hsl(0, 0%, 20%)
+
+//html[data-theme="dark"]
+//  --link-color: rgb(100, 210, 255)
+//  --main-background-color: hsl(0, 0%, 20%)
+//  --main-text-color: hsl(0, 0%, 85%)
+
+
 body
-  background: $light
-  color: $dark
+  background-color: var(--main-background-color)
+  color: var(--main-text-color)
   font-family: $font-family
   font-weight: $font-weight
   font-size: $font-size
@@ -10,11 +21,42 @@ body
   -webkit-text-size-adjust: 100%
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
+  
+//.theme-toggle-button
+//  background-color: var(--main-background-color) // Dark by default
+  // color: var(--main-text-color) // Light by default
 
-@media (prefers-color-scheme: dark)
-  body
-    background: $dark
-    color: $light
+  // &:hover
+  //   background-color: var(--main-text-color) // Light on hover
+  //   color: var(--main-background-color) // Dark on hover
+
+  // // Ensure the SVG inside the button follows the color change on hover
+  // &:hover .icon
+  //   fill: var(--main-background-color) // Dark on hover
+
+
+html
+  --link-color: #5A8D89
+  --main-background-color: #2A323A
+  --main-text-color: #f2f2f2
+
+body.light
+  --link-color: #2F6F6C
+  --main-background-color: #f2f2f2
+  --main-text-color: #2A323A
+
+body.light .theme-toggle-button
+  background-color: var(--main-background-color) // Light in the light theme
+  color: var(--main-text-color) // Dark in the light theme
+
+  &:hover
+    background-color: var(--main-text-color) // Dark on hover
+    color: var(--main-background-color) // Light on hover
+
+  // Ensure the SVG inside the button follows the color change on hover
+//  &:hover .icon
+//    fill: var(--main-background-color) // Light on hover
+
 
 h1, h2, h3, h4, h5, h6
   font-weight: $heading-weight
@@ -26,7 +68,7 @@ p
   text-align: justify
 
 a
-  color: $link-color
+  color: var(--link-color)
   text-decoration: inherit
   &:hover
     text-decoration: underline
